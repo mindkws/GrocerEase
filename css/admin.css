@@ -1,0 +1,352 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@700&family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(120deg,#2980b9, #8e44ad);
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 16px;
+}
+
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.sidebar {
+  width: 20%;
+  min-width: 150px;
+  height: 100vh;
+  border-radius: 16px;
+  background: #151A2D;
+  padding: 16px;
+}
+
+.profile {
+  flex-grow: 1;
+  margin-left: 16px;
+  border-radius: 16px;
+  background: #151A2D;
+  padding: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(255, 255, 255);
+}
+
+.titlee {
+  color: #fff;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar-header {
+  display: flex;
+  padding: 25px 20px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.sidebar-header .header-logo img {
+  width: 46px;
+  height: 46px;
+  display: block;
+  object-fit: contain;
+  border-radius: 50%;
+}
+
+.sidebar-nav .nav-list {
+  list-style: none;
+  display: flex;
+  gap: 4px;
+  padding: 0 15px;
+  flex-direction: column;
+}
+
+.sidebar-nav .nav-link {
+  color: #fff;
+  display: flex;
+  gap: 12px;
+  border-radius: 8px;
+  align-items: center;
+  padding: 12px 15px;
+  text-decoration: none;
+}
+
+.sidebar-nav .nav-link:hover {
+  color: #151A2D;
+  background: #ffffff;
+}
+
+.sidebar-nav .secondary-nav {
+  position: absolute;
+  bottom: 30px;
+  width: 18%;
+}
+
+
+
+
+.profile-container {
+  display: flex;
+  align-items: center;  /* Vertically center the content */
+  gap: 50px;  /* Space between the picture and the info */
+}
+
+
+.profile-info {
+  flex-grow: 1;  /* Let the info section take up the remaining space */
+}
+
+.profile-info p {
+  margin: 5px 0;  /* Add spacing between each piece of information */
+}
+
+.profile-img {
+  width: 150px;  /* Set a fixed width */
+  height: 150px; /* Set the height to match the width */
+  border-radius: 8%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the circle without distortion */
+}
+
+
+.employee-list {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.employee-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #151A2D;
+}
+
+/* Set percentage widths for each column */
+.employee-name {
+  flex: 2; /* Adjust column width by changing flex values */
+}
+
+.employee-id,
+.employee-gender,
+.employee-dob {
+  flex: 1;
+}
+
+.employee-actions {
+  flex: 0.5;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.edit-button {
+  padding: 0.25rem 0.5rem;
+  background-color: #007bff;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+}
+
+.edit-button:hover {
+  background-color: #0056b3;
+}
+
+.form-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #151A2D;
+}
+
+/* Form Heading */
+.form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 15px;
+}
+
+.form-group label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: #fff;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Form Actions */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.btn-update {
+  background-color: #4caf50;
+  color: #fff;
+}
+
+.btn-update:hover {
+  background-color: #45a049;
+}
+
+.btn-delete {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.btn-delete:hover {
+  background-color: #e53935;
+}
+
+/* Form Info/Error */
+.form-info {
+  font-size: 14px;
+  color: #1c1111;
+  margin-bottom: 15px;
+}
+
+.form-error {
+  font-size: 14px;
+  color: #f44336;
+  margin-bottom: 15px;
+}
+
+form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-bottom: 5px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input, select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #5848c2;
+}
+
+.emp_list_pic {
+  width: 100px;  /* Set a fixed width */
+  height: 100px; /* Set the height to match the width */
+  border-radius: 8%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the circle without distortion */
+  gap: 8px;
+}
+
+
+
+
+.product-container {
+  display: flex;
+  align-items: center;  /* Vertically center the content */
+  gap: 250px;  /* Space between the picture and the info */
+}
+
+.product-pic {
+  width: 80px;  /* Set a fixed width */
+  height: 80px; /* Set the height to match the width */
+  border-radius: 8%; /* Make the image circular */
+  object-fit: cover; /* Ensure the image covers the circle without distortion */
+}
+
+.product-list {
+  width:100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+.product-item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #151A2D;
+  gap: 10px;
+}
+
+/* Set percentage widths for each column */
+.product-name {
+  flex: 2; /* Adjust column width by changing flex values */
+}
+
+.product-id,
+.product-price,
+.product-quantity {
+  flex: 1;
+}
